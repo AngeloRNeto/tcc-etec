@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Quick City </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+   
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
+<script src="js/Inicio.js"></script>
+</head>
+
+<body>
+        <!--NavBar--> 
+        <nav class="navbar navbar-light bg-dark justify-content-between">
+            <label class="nav-item nav-link cor">Quick City</label>
+
+            <div id="formBtn"class="form-inline">      
+              <!--Modal-->      
+               <a href="#Entrar" rel="modal"><button name="login" class="btn btn-outline-success my-2 my-sm-0" form="formBtn">Entrar</button> </a>|
+               <a href="#Cadastrar" rel="modal"><button name="cadastro" class="btn btn-outline-primary my-2 my-sm-0" type="submit">Cadastrar-se</button></a>
+            </div>         
+          </nav>
+  
+<!-- MODAIS DE CADASTRO E LOGIN -->
+    
+    <div id="mascara"></div>
+          <div class="window" id="Entrar">
+              
+              <div class="loginbox">
+                <img src="image/avatar.png" class="avatar">                  
+                  <h1>Entrar</h1>
+                  
+                      <form action="php/login.php" method="POST" onsubmit="return VerificaLogin(this)">
+                          <p>E-mail:</p>
+                          <input name="email" type="text" placeholder="Insira seu e-mail">
+                          <p>Senha:</p>
+                          <input name="senha" type="password" name="" placeholder="Insira sua senha">
+                         
+                         <input type="submit" value="Entrar">
+                          <a href="#Cadastrar" rel="modal">Não tem uma conta?</a></br>
+                      </form>
+   
+                  </div>  
+          </div>
+
+
+          <div class="window" id="Cadastrar">
+            <div class="cadastrobox">
+                <img src="image/avatar.png" class="avatar">
+                <h1>Cadastrar</h1>
+                    <form name ="form2" action="php/cadastro.php" method="POST">
+                        <p>Nome:</p>
+                        <input type="text" name="nome" placeholder="Digite seu nome" maxlength="100">
+                        <p>CPF:</p>
+                        <input type="text" name="cpf" placeholder="Digite seu CPF" maxlength="14" onblur="MaskCpf(this)">
+                        <p>E-mail:</p>
+                        <input type="text" name="email" placeholder="Digite seu e-mail" maxlength="100">
+                        <p>Usuário:</p>
+                        <input type="text" name="usuario" placeholder="Digite seu usuário de até 12 caracteres" maxlength="12">
+                        <p>Senha:</p>
+                        <input type="password" name="senha" placeholder="Crie uma senha de até 12 caracteres" maxlength="12">
+                        <p>Confirmar Senha:</p>
+                        <input type="password" name="confsenha" placeholder="Confirme sua senha" maxlength="12">
+                        <input type="button" class="buttonCadastro" value="Cadastrar" onclick="VerificaCadastro()">
+                    </form>
+                
+                
+                </div>
+          </div>      
+                  
+          <!--CARROSEL-->
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="image/carousel1.jpg" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="image/carousel2.jpg" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="image/carousel3.jpg" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        <br>
+
+        
+</body>
+</html>

@@ -1,0 +1,447 @@
+/* INICIO DO CSS DA NAVBAR */
+
+.navbar {
+    padding: .1px 1rem;
+  }
+  
+  /* Usuario logado */
+  .user{
+            
+    -webkit-text-fill-color: #D3D3D3;
+  }
+
+   .cor{
+        
+        text-align: justify;  
+          font-size: xx-large;
+         text-emphasis-color: #D3D3D3;
+         -webkit-text-fill-color: #D3D3D3;
+        }
+
+/* FIM DO CSS DA NAVBAR */
+
+
+
+
+/* CSS DA TELA EM SI */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #353a40;
+}
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align:center;
+    font-size: 20px;
+    }
+
+/*============================BOTOES==================================*/
+.botoes input[type="button"]
+{
+    
+    position: relative;
+    float: left;
+    left: 420px;
+    order: none;
+    outline: none;
+    width: 300px;
+    height: 40px;
+    background: #027223;
+    color: #FFF;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.botoes input[type="button"]:hover{
+    cursor: pointer;
+    background: #269F2A;
+    color: #FFF;
+}
+
+/*====================================================================*/
+/*===========================MODAL DE LOGIN===========================*/    
+
+.loginbox {
+    width: 500px;
+    height: 350px;
+    background: #000;
+    color: #FFF;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;  
+    padding: 70px 30px;
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 15px;
+    }
+
+.loginbox input[type="text"], input[type="password"], input[type="number"]
+{
+    border: none;
+    border-bottom: 1px solid #FFF;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.loginbox input[type="button"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #027223;
+    color: #FFF;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #027223;
+    color: #FFF;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.loginbox input[type="button"] :hover{
+    cursor: pointer;
+    background: #269F2A;
+    color: #FFF;
+}
+.loginbox input[type="submit"] :hover{
+    cursor: pointer;
+    background: #269F2A;
+    color: #FFF;
+}
+
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFF;
+}
+
+.loginbox a:hover
+{
+   color: #269F2A; 
+}
+
+/*====================================================================*/
+/*=====================MODAL DE CADASTRO==============================*/
+
+.cadastrobox {
+    width: 550px;
+    height: 590px;
+    background: #000;
+    color: #FFF;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;  
+    padding: 70px 30px;
+}
+
+.cadastrobox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.cadastrobox input{
+    width: 100%;
+    margin-bottom: 15px;
+    }
+
+.cadastrobox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #FFF;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.cadastrobox input[type="button"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #002677;
+    color: #FFF;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.cadastrobox input[type="button"]:hover{
+    cursor: pointer;
+    background: #212B97;
+    color: #FFF;
+}
+
+.cadastrobox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFF;
+}
+
+.cadastrobox a:hover
+{
+   color: #212B97; 
+}
+
+/*====================================================================*/
+/*=====================MODAL DE RECARGA===============================*/
+
+.recargabox {
+    width: 500px;
+    height: 450px;
+    background: #000;
+    color: #FFF;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;  
+    padding: 70px 30px;
+}
+
+.recargabox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.recargabox input{
+    width: 100%;
+    margin-bottom: 15px;
+    }
+
+.recargabox input[type="text"]
+{
+    border: none;
+    border-bottom: 1px solid #FFF;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.recargabox input[type="button"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #027223;
+    color: #FFF;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.recargabox input[type="button"] :hover{
+    cursor: pointer;
+    background: #269F2A;
+    color: #FFF;
+}
+
+.recargabox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFF;
+}
+
+.recargabox a:hover
+{
+   color: #269F2A; 
+}
+
+/*====================================================================*/
+/*============================MODAL DE SALDO==========================*/
+.saldobox {
+    width: 500px;
+    height: 300px;
+    background: #000;
+    color: #FFF;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;  
+    padding: 70px 30px;
+}
+.saldobox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.saldobox input{
+    width: 100%;
+    margin-bottom: 15px;
+    }
+
+.saldobox input[type="text"]
+{
+    border: none;
+    border-bottom: 1px solid #FFF;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.saldobox input[type="button"]
+{
+    
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #027223;
+    color: #FFF;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.saldobox input[type="button"]:hover{
+    cursor: pointer;
+    background: #269F2A;
+    color: #FFF;
+}
+
+.saldobox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFF;
+}
+
+.saldobox a:hover
+{
+   color: #269F2A; 
+}
+/*====================================================================*/
+/*=====================BOTÕES DA NAVBAR DE LOGADO=====================*/
+.dropdown-item
+{
+    background: #353a40;
+    color: #fff;
+}
+.dropdown-menu
+{
+    background: #353a40;
+    color: #fff;
+}
+
+.dropdown-item:hover{
+    background: #027223;
+    color: #fff;
+    border-radius: 10px;
+}
+/*====================================================================*/
+/*=============================MODAL==================================*/
+.window{
+    display:none;
+    width:300px;
+    height:300px;
+    position:absolute;
+    left:0;
+    top:0;
+    background:#FFF;
+    z-index:9900;
+    padding:10px;
+    border-radius:10px;
+}
+ 
+#mascara{
+    display:none;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#000;
+}
+ 
+.fechar{
+         text-align:end;
+         display:block;
+         
+         }
+
+.alerta { border: 1 solid #ff0000; }
+/*====================================================================*/
+.helpbox {
+    width: 500px;
+    height: 500px;
+    background: #000;
+    color: #FFF;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;  
+    padding: 70px 30px;
+}
+.helpbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+    .helpbox input{
+        width: 100%;
+        margin-bottom: 15px;
+        }
+.helpbox input[type="button"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #002677;
+    color: #FFF;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.helpbox input[type="button"]:hover{
+    cursor: pointer;
+    background: #212B97;
+    color: #FFF;
+}
+.helpbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFF;
+}
+.helpbox a:hover
+{
+   color: #212B97; 
+}
+   
